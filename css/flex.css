@@ -1,0 +1,26 @@
+
+body{
+    background: linear-gradient(90deg, #f0cde7, #FF9EE1); 
+
+}
+.photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Espacio entre las imágenes */
+    justify-content: center; /* Centra las imágenes en el contenedor */
+    margin: 20px; /* Margen alrededor del contenedor */
+}
+
+.photo-gallery img {
+    width: 100%;
+    max-width: 200px; /* Ancho máximo para las imágenes */
+    height: auto;
+    border-radius: 8px; /* Bordes redondeados para las imágenes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra de la imagen */
+}
+
+@media (max-width: 600px) {
+    .photo-gallery img {
+        max-width: 150px; /* Ancho máximo para pantallas pequeñas */
+    }
+}

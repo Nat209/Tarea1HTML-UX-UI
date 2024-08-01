@@ -1,0 +1,115 @@
+body {
+    background: linear-gradient(90deg, #f0cde7, #FF9EE1); 
+    margin: 0;
+    font-family: Arial, sans-serif; /* Asegúrate de incluir una fuente básica */
+}
+
+.container {
+    background-color: #ffffff;
+    width: 70%; /* Ajusta el ancho para que sea más flexible */
+    max-width: 900px; /* Añade un límite máximo de ancho */
+    margin: 2rem auto; /* Cambia el margen para centrar en la pantalla */
+    border-radius: 30px;
+    height: auto;
+  
+}
+
+.containerNotice {
+    display: flex;
+    flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+}
+
+.head {
+    border-bottom: 2px solid rgb(74, 73, 73);
+    text-align: center; 
+    border-radius: 30px;
+    padding: 10px;
+}
+
+section {
+    flex: 1;
+    margin-bottom: 1rem; /* Espacio en lugar de margin-right en pantallas pequeñas */
+    padding: 5rem;
+    
+}
+
+aside {
+    margin-top: 1rem;
+    padding: 5rem;
+    border-left: 1px solid rgba(74, 73, 73, 0.797);
+
+}
+
+.publicidad {
+    width: 100%;
+    max-width: 200px; /* Asegúrate de que las imágenes no se agranden demasiado */
+    margin-bottom: 2rem; /* Espacio entre las imágenes */
+}
+
+.linksNotice {
+    text-decoration: none;
+    color: black;
+}
+
+.ul {
+    padding: 0;
+    list-style: none; /* Elimina los puntos de la lista */
+    text-align: center;
+}
+
+.li {
+    display: block;
+    padding: 0.5rem 0; /* Ajusta el relleno de los elementos de la lista */
+}
+
+.navb {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.727);
+}
+
+footer {
+    padding: 1rem;
+    border-top: 2px solid black;
+    text-align: center;
+}
+
+/* Media Queries */
+
+@media (min-width: 768px) {
+    .containerNotice {
+        flex-direction: row; /* Cambia la dirección a fila en pantallas medianas y grandes */
+    }
+
+    section {
+        flex: 3;
+        margin-right: 20px;
+    }
+
+    aside {
+        flex: 1;
+        margin-top: 0;
+        padding-left: 2rem;
+    }
+
+    .publicidad {
+        width: 100%;
+        max-width: 200px; /* Asegúrate de que las imágenes no se agranden demasiado */
+    }
+
+    .li {
+        display: inline-block;
+        padding-left: 50px;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        width: 95%; /* Ajusta el ancho para pantallas pequeñas */
+    }
+
+    .ul {
+        text-align: left; /* Alinea a la izquierda para pantallas pequeñas */
+    }
+    .catSmile{
+        max-width: 400PX;
+    }
+}

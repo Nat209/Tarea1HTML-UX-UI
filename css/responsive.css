@@ -1,0 +1,24 @@
+body{
+    background: linear-gradient(90deg, #f0cde7, #FF9EE1); 
+
+}
+
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px; /* Espacio entre las imágenes */
+    margin: 20px; /* Margen alrededor del contenedor */
+}
+
+.photo-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Bordes redondeados para las imágenes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra de la imagen */
+}
+
+@media (max-width: 600px) {
+    .photo-gallery {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Ajusta el tamaño para pantallas pequeñas */
+    }
+}

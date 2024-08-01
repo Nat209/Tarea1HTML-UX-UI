@@ -1,0 +1,18 @@
+
+body {
+  
+    font-family: 'Arial', sans-serif;
+}
+.navbar {
+    background-color: #f0cde7; /* Fondo azul pastel */
+}
+.nav-link {
+    color: #7d24a7; /* Texto azul oscuro */
+    font-weight: bold;
+}
+.nav-link:hover {
+    color: #7d24a7;
+    background-color: #a2c5ef;
+    border-radius: 5px;
+    
+}
