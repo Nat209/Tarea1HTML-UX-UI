@@ -21,4 +21,7 @@ body{
     .photo-gallery {
         grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Ajusta el tamaño para pantallas pequeñas */
     }
+    .photo{
+        content: url('../img/responsive.jfif');
+    }
 }
